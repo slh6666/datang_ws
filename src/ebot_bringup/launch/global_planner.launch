@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="global_planner" type= "global_planner_node" name="global_planner_node" output="screen">
+
+       <rosparam file="$(find ebot_bringup)/yaml/waypoint.yaml" command="load" />
+
+    </node>
+</launch>

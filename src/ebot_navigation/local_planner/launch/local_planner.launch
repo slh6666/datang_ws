@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="local_planner" type= "local_planner_node" name="local_planner_node" output="screen">
+        <param name="global_path" value="/global_path"/>
+        <param name="costmap" value="/costmap"/>
+        <param name="robot_pose" value="/robot_pose"/>
+        <param name="local_trajectory" value="/local_trajectory"/>
+        <rosparam file="$(find local_planner)/yaml/frenet_trajectory.yaml" command="load" />
+    </node>
+</launch>

@@ -1,0 +1,36 @@
+<launch>
+    <arg name="cmd_vel_topic" default="/cmd_vel" />
+    <arg name="odom_topic" default="/bicycle_wheel_odometry/odom" />
+    <arg name="map_topic" default="/map" />
+
+
+    <!-- move_base -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+        <!-- move base parameters -->
+        <rosparam file="/home/ubuntu/catkin_ws/src/robot_bringup/param/move_base_params.yaml" command="load" />
+        <!-- costmap -->
+        <rosparam file="/home/ubuntu/catkin_ws/src/robot_bringup/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="/home/ubuntu/catkin_ws/src/robot_bringup/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="/home/ubuntu/catkin_ws/src/robot_bringup/param/local_costmap_params.yaml" command="load" />
+        <rosparam file="/home/ubuntu/catkin_ws/src/robot_bringup/param/global_costmap_params.yaml" command="load" />
+        <!-- global planner mcrp_global_planner/MCRPlanner -->
+        <param name="base_global_planner" value="navfn/NavfnROS"/>
+        <!-- local planner -->
+        <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS" />
+        <rosparam file="/home/ubuntu/catkin_ws/src/robot_bringup/param/dwa_local_planner_params.yaml" command="load" />
+        <!-- remap topic -->
+        <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
+        <remap from="odom" to="$(arg odom_topic)"/>
+        <remap from="map" to="$(arg map_topic)" />
+    </node>
+
+   <!-- <node pkg="nodelet" type="nodelet" name="nodelet_manager_planning_velocity_smoother" args="manager"/>
+    <include file="$(find yocs_velocity_smoother)/launch/velocity_smoother.launch">
+        <arg name="nodelet_manager_name"  value="nodelet_manager_planning_velocity_smoother"/>
+        <arg name="node_name" value="planner_velocity_smoother"/>
+        <arg name="config_file" value="/home/ubuntu/catkin_ws/src/robot_bringup/param/smooth_config.yaml"/>
+        <arg name="raw_cmd_vel_topic" value="/raw_cmd_vel"/>
+        <arg name="smooth_cmd_vel_topic" value="/cmd_vel"/>
+    </include> -->
+
+</launch>

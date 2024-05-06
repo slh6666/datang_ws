@@ -1,0 +1,7 @@
+<launch>
+        <!-- 机器人仿真启动 -->
+
+        <include file="$(find ebot_gazebo)/launch/gazebo.launch" />
+
+        <!-- 机器人仿真启动 -->
+</launch>

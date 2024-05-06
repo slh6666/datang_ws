@@ -1,0 +1,10 @@
+<launch>
+    <node name="motor" pkg="ebot_base" type="motor" output="screen" >
+        <param name="PortName" value="/dev/motor" />
+        <param name="control_topic" value="/cmd_vel"/>
+        <param name="radar_result_topic" value="/robot/radar_result"/>
+        <param name="chassis_status_topic" value="/robot/chassis_status"/>
+        <param name="battery_voltage_topic" value="/robot/battery_voltage"/>
+    </node>
+    
+</launch>

@@ -1,0 +1,23 @@
+<launch>
+  
+  <!-- 机器人实物启动 -->
+
+  <!-- 启动底盘 -->
+  <!-- <include file="$(find ebot_bringup)/launch/base_control.launch" />-->
+  <include file="$(find turn_on_wheeltec_robot)/launch/turn_on_wheeltec_robot.launch" /><!-- from base_control to turn_on-->
+  <!-- 启动雷达 -->
+  <include file="$(find ebot_bringup)/launch/rplidar.launch" />
+  
+  <!-- 启动IMU -->
+  <!-- <include file="$(find ebot_bringup)/launch/imu.launch" /> -->
+  <!-- 启动摄像头 -->
+  <!-- <include file="$(find realsense2_camera)/launch/rs_d435_camera_with_model.launch"/> -->
+
+  <!--static TF-->
+  <include file="$(find ebot_bringup)/launch/static_tf.launch"/>
+
+  <!-- 机器人模型 -->
+  <!-- <include file="$(find ebot_description)/launch/ebot_description.launch" /> -->
+
+  <!-- 机器人实物启动 -->
+</launch>

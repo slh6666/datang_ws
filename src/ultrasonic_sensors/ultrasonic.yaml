@@ -1,0 +1,19 @@
+# 超声波位置对应的编号
+
+# front_left: 7
+# front_right: 0
+# left_side_front: 6
+# left_side_back: 5
+# right_side_front: 1
+# right_side_back: 2
+# back_left: 4
+# back_right: 3
+
+front_left: 0
+front_right: 1
+left_side_front: 7
+left_side_back: 6
+right_side_front: 2
+right_side_back: 3
+back_left: 5
+back_right: 4

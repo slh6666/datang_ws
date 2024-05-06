@@ -1,0 +1,3 @@
+# obstacle layer
+observation_sources: scan
+scan: {sensor_frame: laser, topic_name: /laser_msgs_filter_node/point_cloud, data_type: PointCloud2}

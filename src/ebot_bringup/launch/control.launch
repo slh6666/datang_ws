@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+
+
+<include file="$(find ebot_bringup)/launch/pid_control.launch"/>
+
+
+</launch>

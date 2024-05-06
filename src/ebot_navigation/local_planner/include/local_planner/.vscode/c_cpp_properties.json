@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/zyc/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/zyc/catkin_ws/src/ebot_navigation/astar/include/**",
+        "/home/zyc/catkin_ws/src/ebot_navigation/costmap/include/**",
+        "/home/zyc/catkin_ws/src/ebot_base/include/**",
+        "/home/zyc/catkin_ws/src/ebot_bringup/include/**",
+        "/home/zyc/catkin_ws/src/ebot_description/include/**",
+        "/home/zyc/catkin_ws/src/ebot_navigation/global_planner/include/**",
+        "/home/zyc/catkin_ws/src/ebot_navigation/kd_tree/include/**",
+        "/home/zyc/catkin_ws/src/ebot_navigation/local_planner/include/**",
+        "/home/zyc/catkin_ws/src/ebot_control/pid_controller/include/**",
+        "/home/zyc/catkin_ws/src/turtlebot3/turtlebot3_fake/include/**",
+        "/home/zyc/catkin_ws/src/turtlebot3/turtlebot3_gazebo/include/**",
+        "/home/zyc/catkin_ws/src/turtlebot3/turtlebot3/turtlebot3_slam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

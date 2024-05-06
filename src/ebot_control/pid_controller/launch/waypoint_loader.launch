@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="pid_controller" type="waypoint_loader.py" name="waypoint_loader">
+        <param name="path" value="$(find pid_controller)/waypoints/waypoints.csv" />
+        <param name="velocity" value="15" />
+    </node>
+</launch>

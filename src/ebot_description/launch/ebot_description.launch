@@ -1,0 +1,13 @@
+<launch>
+    <arg name='ebot' />
+    <arg name="gui" default="False" />
+    <param name="robot_description" textfile="$(find ebot_description)/urdf/ebot_robot.urdf" />
+    <param name="use_gui" value="$(arg gui)" />
+    <node name="ebot_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    </node>
+
+    <node name="ebot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+		<!-- 运行rviz可视化界面 -->
+		<!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ebot_description)/config/ebot_urdf.rviz" required="true" /> -->
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+    <!-- 静态tf发布 -->
+    <node pkg="tf" type="static_transform_publisher" name="map_world_broadcaster" args="0 0 0 0 0 0 /map /world 100" />
+
+    <!-- 程序 -->
+    <node pkg="costmap" name="costmap_node" type="costmap_node" output="screen">
+        <param name="static_map_topic" value="/map"/>
+        <param name="costmap_pub_topic" value="/costmap"/>
+        <rosparam file="$(find costmap)/yaml/sensor.yaml" command="load" />
+    </node>
+</launch>

@@ -1,0 +1,10 @@
+VoxelPlanner:
+  dynamic_grid_map_topic: /local_map_generation/dynamic_costmap_2d
+  odom_topic: /localization/ackermanekf
+  robot_radius: 0.26
+  robot_max_linear_velocity: 0.8
+  robot_min_linear_velocity: 0.0
+  robot_max_angular_velocity: 1.0
+  robot_max_acceleration: 0.4
+  robot_max_angular_velocity_rate: 0.5
+  foreseen_frames: 6

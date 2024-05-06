@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <include file="$(find vehicle_sim)/launch/vehicle_sim.launch" />
+
+  <include file="$(find pid_controller)/launch/waypoint_loader.launch" />
+
+  <node pkg="pid_controller"  type="ebotController" name="ebotController" output = "screen">
+  </node>
+
+
+</launch>

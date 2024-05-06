@@ -1,0 +1,8 @@
+int8 heartBeat
+int8 isLeftMotorOut
+int8 isRightMotorOut
+int8 isWheelSpeedControl
+int8 isChassisOpenControl
+int8 isChassisCloseControl
+
+float32 batteryVoltage

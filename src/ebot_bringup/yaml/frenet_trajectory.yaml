@@ -1,0 +1,17 @@
+ROAD_WIDTH: 1.0  # 道路的最大宽度
+WIDTH_GAP: 0.2 # 道路的横向采样间隔
+MIN_T: 10.0  # 最短时间开销
+MAX_T: 12.0  # 最长时间开销
+T_GAP: 0.2  # 时间采样kdtree
+ESP: 0.0000001 #1e-6  # 精度要求
+MAX_VELOCITY: 0.5 #50.0 / 3.6  # 最大速度
+TARGET_VELOCITY: 0.3 #30.0 / 3.6  # 期望速度
+VELOCITY_GAP: 0.05 #5.0 / 3.6  # 速度采样间隔
+VELOCITY_SAMPLE_N: 1  # 速度采样个数
+MAX_KAPPA: 500  # 最大曲率
+MAX_ACCELERATION: 0.05  # 最大加速度
+ROBOT_SIZE: 0.15  # 机器人的半径0.15
+GOAL_SIZE: 1.5
+PATH_GAP: 25
+AREA: 20.0  # 可视化窗口大小
+

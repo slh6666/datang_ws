@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="local_planner" type= "local_planner_node" name="local_planner_node" output="screen">
+        <param name="global_path" value="/global_path"/>
+        <param name="costmap" value="/costmap"/>
+        <param name="robot_pose" value="/amcl_pose"/>
+        <param name="local_trajectory" value="/local_trajectory"/>
+        <param name="local_trajectory_path" value="/local_trajectory_path"/>
+        <param name="renference_curve" value="/renference_curve"/>
+        <param name="frenet_path_set_one" value="/frenet_path_set_one"/>
+        <rosparam file="$(find ebot_bringup)/yaml/frenet_trajectory.yaml" command="load" />
+    </node>
+</launch>

@@ -1,0 +1,12 @@
+<launch>
+  <node name="delta_lidar"    pkg="delta_lidar"  type="delta_lidar_node" output="screen">
+  <param name="serial_port"         type="string" value="/dev/ttyUSB0"/>
+  <param name="frame_id"            type="string" value="laser"/>
+  </node>
+
+  <node pkg="tf2_ros" type="static_transform_publisher" name="laser2base_broadcaster" 
+    args="0.04 0 0 3.05 0 0 base_link laser" />
+  
+  <node pkg="tf2_ros" type="static_transform_publisher" name="baselink2basefootprint_broadcaster"
+    args="-0.0 0 0 0 0 0 base_link base_footprint" />
+</launch>

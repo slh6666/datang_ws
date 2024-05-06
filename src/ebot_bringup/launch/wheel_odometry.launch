@@ -1,0 +1,17 @@
+<!-- 
+  This node presents a fast and precise method to estimate the planar motion of a lidar
+  from consecutive range scans. It is very useful for the estimation of the robot odometry from
+  2D laser range measurements.
+  
+  Requirements:
+  - 2D laser scan, publishing sensor_msgs::LaserScan
+  - TF transform from the laser to the robot base
+-->
+
+<launch>
+
+    <node pkg="wheel_encoder_odometry" type="wheel_encoder_odometry" name="wheel_encoder_odometry" >
+       
+    </node>
+
+</launch>

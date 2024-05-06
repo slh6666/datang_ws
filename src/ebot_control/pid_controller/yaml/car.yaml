@@ -1,0 +1,12 @@
+- vehicle:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    yaw: 0.0
+    start_gear: D
+    color: silver
+    pub_tf: true
+    pub_odom: true
+    model: mkz
+    year: 2017
+

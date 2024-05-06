@@ -1,0 +1,10 @@
+<launch>
+    <node name="motor" pkg="ebot_base" type="motor" output="screen" >
+        <param name="PortName" value="/dev/serial/by-path/platform-xhci-hcd.2.auto-usb-0:1.1.2.2:1.3-port0" />
+        <param name="control_topic" value="/cmd_vel"/>
+        <param name="radar_result_topic" value="/robot/radar_result"/>
+        <param name="chassis_status_topic" value="/robot/chassis_status"/>
+        <param name="battery_voltage_topic" value="/robot/battery_voltage"/>
+    </node>
+    
+</launch>

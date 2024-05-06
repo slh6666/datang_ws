@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="serial_imu"  type="serial_imu" name="imu_driver" output="screen" >
+        <param name="PortName" type="string" value="/dev/imu"/>
+        <param name="frame_id" type="string" value="imu_link" />
+    </node>
+</launch>

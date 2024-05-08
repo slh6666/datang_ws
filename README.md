@@ -1,6 +1,7 @@
 # 西安交通大学智能车团队&大唐移动合作开发无人车项目
 用途为高校无人车教育，功能包含定位规划控制、动态避障、双目相机探测、超声波预警急停。  
-![image](https://github.com/slh6666/datang_ws/blob/main/wheeltec_robot.jpg)  
+![image](wheeltec_robot.jpg)  
+![image](puhuo.PNG)  
 ## 0.底盘软件功能包
 &emsp;&emsp;功能包`turn_on_wheeltec_robot`是轮趣无人车底盘与上层ROS主控交互的软件包，主要负责串口读取底层主控stm32的底盘相关数据，
 其源码文件位于`/src/turn_on_wheeltec_robot/src/wheeltec_robot.cpp`。在其已有功能基础上，我们开发了超声波数据读取、

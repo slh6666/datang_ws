@@ -1,0 +1,4 @@
+# obstacle layer
+observation_sources: "base_scan"
+base_scan: {topic_name: scan, data_type: LaserScan}
+sonar: {topic_name: /robot/sonar, data_type: Ultrasonic}
